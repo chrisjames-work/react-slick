@@ -80,7 +80,7 @@ export const canGoNext = spec => {
       canGo = false;
     } else if (
       spec.slideCount <= spec.slidesToShow ||
-      spec.currentSlide >= spec.slideCount - spec.slidesToShow
+      spec.currentSlide >= spec.slideCount - (spec.slidesToShow - 2)
     ) {
       canGo = false;
     }
